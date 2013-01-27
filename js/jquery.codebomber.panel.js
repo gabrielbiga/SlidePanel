@@ -68,7 +68,11 @@
 			//and panel display to any elements that have the attribute rel="panel"
 			$('a[rel=panel]').live('click', function(e) {
 				e.preventDefault();
-				base.load({element: this});
+				if(base.options.static) { 
+					base.expand();
+				} else {
+					base.load({element: this});
+				};
 			});
 			
 			//bind a click event to any element with class .close that is inside of the panel
@@ -129,7 +133,8 @@
     
 	//set default options
     $.Codebomber.Panel.defaultOptions = {
-        orientation: "left"
+        orientation: "left",
+        static: false
     };
     
 	//main plugin entry point
