@@ -35,7 +35,7 @@
 		//store if an ajax request has already been made
 		base.loaded = false;
         
-		base.init = function(){
+		base.init = function(options){
             //Combine default options with constructor options
 			base.options = $.extend({},$.Codebomber.Panel.defaultOptions, options);
             
@@ -124,7 +124,7 @@
 		}
         
         // Run initializer
-        base.init();
+        base.init(options);
     };
     
 	//set default options
