@@ -33,7 +33,16 @@ For a demo goto http://codebomber.com/jquery/slidepanel
 The href attribute is used to load external HTML content into your panel
     
     <a href="external.php" rel="panel">Show Panel</a>
+
+##Passing in options
+Pass in options via:
+
+    $('#panel').codebomber_Panel(options = {orientation: 'right', static: true});
     
+Orientation sets the orientation of the rendered panel (top, right, bottom, left).  Default is left.
+
+If you have static content to render, set static: true.  If you are rendering ajax content, leave out,
+or set to false.  Default is false.
 
 
 ##Misc
