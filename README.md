@@ -25,14 +25,14 @@ The href attribute is used to load external HTML content into your panel
 
 
 ##Load the plugin on your element 
-  <script type="text/javascript">
-      $(document).ready(function(){
-          $('[data-slidepanel]').slidepanel({
-              orientation: 'top',
-              mode: 'push'
+    <script type="text/javascript">
+          $(document).ready(function(){
+              $('[data-slidepanel]').slidepanel({
+                  orientation: 'top',
+                  mode: 'push'
+              });
           });
-      });
-  </script>
+    </script>
     
 ##Options
 
