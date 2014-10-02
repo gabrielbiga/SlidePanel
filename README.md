@@ -1,8 +1,13 @@
 SlidePanel
 ==========
 
-A quick and easy way to add a contextual ajax sliding panel to your site.
+A awesome quick and easy way to add a contextual ajax sliding panel to your site.
 Created and maintained by [William Golden](http://twitter.com/egdelwonk)
+
+**AND**
+
+Improved by [Gabriel Marinho](http://twitter.com/gabrielbiga)
+See this file to see changes of original project
 
 
 
@@ -23,6 +28,10 @@ The href attribute is used to load external HTML content into your panel
     <a href="external.html" data-slidepanel="panel">Show Panel</a> or
     <a href="external2.html" class="panel">Show Panel</a>
 
+*NEW!* 
+If you need load a static div content inside sidebar
+    
+    <a data-slidepanel-content="#div_to_sidebar" data-slidepanel="panel">Show Panel</a>
 
 ##Load the plugin on your element 
     <script type="text/javascript">
