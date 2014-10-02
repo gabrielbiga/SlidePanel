@@ -83,6 +83,20 @@
 
     Slidepanel.prototype.load = function() {
             var base = this;
+            
+            //ematgab hook
+    	    //If set (data-slidepanel-content), grab html into slidebar
+    	    var div = $(this.$element).attr("data-slidepanel-content");
+    
+    	    if(div != null) {
+    	       this.expand();
+    		
+    	       $('.inner .wrapper', this.$panel).html($(div).html());
+    
+    	       return; //you shall not pass
+    	    }
+            //---
+            
             //if the current trigger element is the element that just triggered a load
             if(this.$panel.data('slidepanel-current') == this.$element) {
                 //collapse the current panel
